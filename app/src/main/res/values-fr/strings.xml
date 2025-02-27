@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Compteur</string>
+    <string name="reset">Réinitialiser</string>
+</resources>

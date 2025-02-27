@@ -1,0 +1,19 @@
+<resources>
+
+    <style name="Base.Theme.ScoreCounter" parent="Theme.AppCompat.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="Theme.ScoreCounter" parent="Base.Theme.ScoreCounter" />
+
+    <style name="ScoreButton">
+        <item name="android:background">@drawable/bg_button</item>
+        <item name="android:paddingBottom">36dp</item>
+        <item name="android:alpha">0.6</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:gravity">bottom|center</item>
+    </style>
+</resources>
