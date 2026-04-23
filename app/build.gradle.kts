@@ -5,14 +5,14 @@ plugins {
 
 android {
     namespace = "fr.vju.scorecounter"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "fr.vju.scorecounter"
-        minSdk = 21
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        minSdk = 23
+        targetSdk = 36
+        versionCode = 2
+        versionName = "1.1"
 
     }
 
@@ -26,11 +26,14 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
-    kotlinOptions {
-        jvmTarget = "1.8"
+}
+
+kotlin {
+    compilerOptions {
+        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
     }
 }
 
