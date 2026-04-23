@@ -35,17 +35,17 @@ class MainActivity : AppCompatActivity() {
         val bottomCounter = findViewById<TextView>(R.id.BottomCounter)
         findViewById<Button>(R.id.TopLeftButton).setOnClickListener {
             this.topCounter = max(0, --this.topCounter)
-            topCounter.text = toEnhancedString(this.topCounter);
+            topCounter.text = toEnhancedString(this.topCounter)
         }
         findViewById<Button>(R.id.TopRightButton).setOnClickListener {
-            topCounter.text = toEnhancedString(++this.topCounter);
+            topCounter.text = toEnhancedString(++this.topCounter)
         }
         findViewById<Button>(R.id.BottomLeftButton).setOnClickListener {
             this.bottomCounter = max(0, --this.bottomCounter)
-            bottomCounter.text = toEnhancedString(this.bottomCounter);
+            bottomCounter.text = toEnhancedString(this.bottomCounter)
         }
         findViewById<Button>(R.id.BottomRightButton).setOnClickListener {
-            bottomCounter.text = toEnhancedString(++this.bottomCounter);
+            bottomCounter.text = toEnhancedString(++this.bottomCounter)
         }
         findViewById<Button>(R.id.ResetButton).setOnClickListener {
             this.topCounter = 0
